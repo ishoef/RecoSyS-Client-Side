@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+
+  --color-primary: #14b8a6; /* Teal - Primary Button */
+  --color-secondary: #10b981; /* Green - Secondary Elements */
+  --color-accent: #06b6d4; /* Sky Blue - Accent */
+  --color-neutral: #374151; /* Slate - Neutral Background/Text */
+  --color-base-100: #ffffff; /* White - Base Background */
+
+  --color-info: #3abff8; /* Light Blue - Info */
+  --color-success: #36d399; /* Mint Green - Success */
+  --color-warning: #fbbd23; /* Yellow - Warning */
+  --color-error: #f87272; /* Red - Error */
+}
+
+@tailwind utilities;
+
+@layer utilities {
+  .poppins-thin {
+    @apply font-[100] font-[Poppins];
+    font-family: "Poppins", sans-serif;
+  }
+
+  .poppins-extralight {
+    @apply font-[200];
+    font-family: "Poppins", sans-serif;
+  }
+
+  .poppins-light {
+    @apply font-[300];
+    font-family: "Poppins", sans-serif;
+  }
+
+  .poppins-regular {
+    @apply font-normal;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .poppins-medium {
+    @apply font-medium;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .poppins-semibold {
+    @apply font-semibold;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .poppins-bold {
+    @apply font-bold;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .poppins-extrabold {
+    @apply font-extrabold;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .poppins-black {
+    @apply font-black;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* Italic versions */
+  .poppins-thin-italic {
+    @apply font-[100] italic;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .poppins-extralight-italic {
+    @apply font-[200] italic;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .poppins-light-italic {
+    @apply font-[300] italic;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .poppins-regular-italic {
+    @apply font-normal italic;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .poppins-medium-italic {
+    @apply font-medium italic;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .poppins-semibold-italic {
+    @apply font-semibold italic;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .poppins-bold-italic {
+    @apply font-bold italic;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .poppins-extrabold-italic {
+    @apply font-extrabold italic;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .poppins-black-italic {
+    @apply font-black italic;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+.poppins{
+  font-family: "Poppins", sans-serif;
+}
+
+.flexeble {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Scroll-Bar Styling */
+
+/* For WebKit-based browsers (Chrome, Safari, Edge) */
+
+/* Controls the size of the scrollbar (width for vertical, height for horizontal) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Styles the track (the empty space behind the scrollbar thumb) */
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Light gray background for the track */
+}
+
+/* Styles the draggable part of the scrollbar (thumb) */
+::-webkit-scrollbar-thumb {
+  background: #14b8a6; /* Teal color thumb */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Changes the thumb color when hovered */
+::-webkit-scrollbar-thumb:hover {
+  background: #0d9488; /* Darker teal on hover */
+}
+
+/* For Firefox */
+
+/* Applies to all elements – enables thin scrollbar and sets thumb/track colors */
+* {
+  scrollbar-width: thin; /* Makes scrollbar thinner */
+  scrollbar-color: #14b8a6 #f0f0f0; /* Thumb color first, then track */
+}
+
+/* in your global CSS */
+.dropdown-fix {
+  position: absolute !important;
+  z-index: 9999;
+}
+
+.dropdown-content {
+  position: absolute !important;
+}
