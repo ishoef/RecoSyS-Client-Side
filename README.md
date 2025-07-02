@@ -119,5 +119,5 @@ Inspired by platforms like **Quora**, this app delivers a smooth, responsive exp
 ## 👨‍💻 Developed By
 
 **MD. Ismail Hossan Nayef**  
-📧 Email: [ismailhossennayeb@email.com](mailto:ismailhossennayeb@email.com)
+📧 Email: [ismailhossennayeb@gmail.com](mailto:ismailhossennayeb@email.com)
 
